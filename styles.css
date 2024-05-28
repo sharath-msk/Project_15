@@ -1,0 +1,56 @@
+/* Add background image to main section */
+.main {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png');
+    background-size: cover;
+  }
+  
+  /* Adjust padding for navigation items */
+  .container ul li {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  /* Resize coffee beans image and adjust spacing */
+  .supporting img {
+    width: 10%;
+    height: auto;
+    margin-right: 5%;
+  }
+  
+  /* Increase font size of the rating */
+  .rating h1 {
+    font-size: 2.5rem; /* Equivalent to 40 pixels */
+  }
+  
+  /* Ensure map image spans the page's width */
+  .location img {
+    width: 100%;
+  }
+  
+  /* Media queries for responsive design */
+  @media screen and (max-width: 960px) {
+    .main {
+      padding-top: 0; /* Remove top padding for navigation bar */
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .supporting img {
+      display: none; /* Hide coffee beans image */
+    }
+  }
+  
+  @media screen and (max-width: 470px) {
+    .rating h1 {
+      font-size: 2rem; /* Equivalent to 32 pixels */
+    }
+    
+    .gallery img {
+      width: 100%; /* Make gallery images fill width */
+      margin: 0; /* Remove margin */
+    }
+    
+    footer nav {
+      display: none; /* Hide navigation in footer */
+    }
+  }
+  
